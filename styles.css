@@ -40,10 +40,11 @@ img {
 
 }
 
-.scam {
+#scam {
   position: fixed;
   top: 30px;
   right: 30px;
+  height: auto;
 }
 
 .menu {
@@ -54,4 +55,10 @@ img {
 a {
   display: block;
   text-decoration: none;
+}
+
+#hamburger {
+  background-color: white;
+  border:1px solid black;
+  position:fixed;
 }

@@ -10,8 +10,8 @@
     <div class="container">
       <div class="headtext">
         <h1>Vacation Destinations of the World</h1>
-        <button class="scam" type="button">CLICK HERE</button>
-        <i class="fa fa-bars fa-2x menu"></i>
+        <button id="scam" type="button">CLICK HERE</button>
+        <i class="fa fa-bars fa-2x menu" id="hamburger" onclick="dropDown()"></i>
 
         <h2><i class="fa fa-arrows-v"></i> Useful Links</h2>
         <a href="#">Vacation Planning</a>
@@ -21,18 +21,19 @@
         <a href="#">Cave Tours</a>
       </div>
       <div class="linkbox">
-        <i class="fa fa-arrow-left fa-3x"></i>
+        <i class="fa fa-arrow-left fa-3x" id="leftArrow"></i>
         <div class="box">
-          <img src="images/cancun.jpg" />
+          <img id="cancun" onmouseenter="move()" src="images/cancun.jpg" />
         </div>
         <div class="box">
-          <img src="images/hawaii-art.jpg" />
+          <img id="hawaii" onmouseover="rotate()" src="images/hawaii-art.jpg" />
         </div>
         <div class="box">
-          <img src="images/nyc.jpeg" />
+          <img id="nyc" onmouseover="enlarge()" src="images/nyc.jpeg" />
         </div>
-        <i class="fa fa-arrow-right fa-3x"></i>
+        <i class="fa fa-arrow-right fa-3x" id="rightArrow"></i>
       </div>
     </div>
+    <script src="app.js"></script>
   </body>
 </html>
